@@ -30,25 +30,25 @@
                     <form>
                         <label class="label">
                             Imie
-                            <svg class="form-svg-icon">
+                            
+                            <input class="modal-form-input" type="text" name="name" required> <svg class="form-svg-icon">
                                 <use href="images/icon.svg#icon-form-name"></use>
-                            </svg>
-                            <input type="text" name="name"> </label>
-                        <label class="label">
+                            </svg></label>
+                        <label class="label" >
                             Telefon
-                            <svg class="form-svg-icon">
+                            
+                            <input class="modal-form-input" type="tel" name="telephone" required><svg class="form-svg-icon">
                                 <use href="images/icon.svg#icon-form-phone"></use>
-                            </svg>
-                            <input type="tel" name="telephone"> </label>
+                            </svg> </label>
+                            <div>
                         <label class="label">
                             Email
-                            <svg class="form-svg-icon">
+                            <input class="modal-form-input" type="mail" name="email" required><svg class="form-svg-icon">
                                 <use href="images/icon.svg#icon-form-mail"></use>
-                            </svg>
-                            <input type="mail" name="email"> </label>
+                            </svg> </div></label>
                         <label class="label">
                             Komentarz
-                            <textarea type="text" name="description" placeholder="Wprowadź tekst"></textarea>
+                            <textarea class="modal-form-textarea" required type="text" name="description" placeholder="Wprowadź tekst"></textarea>
                         </label>
                 </div>
                 <div class="modal-submit">
@@ -341,7 +341,7 @@
                 <p>Zapisz się do newslettera</p>
                 <form>
                     <label>
-                        <input class="footer-input-mail" type="email" name="email" placeholder="E-mail" />
+                        <input class="footer-input-mail" type="email" name="email" placeholder="E-mail" required />
                     </label>
                     <button type="submit">Zapisz sie<svg class="foot-svg-icon">
                             <use href="images/icon.svg#icon-icon-send"></use>
