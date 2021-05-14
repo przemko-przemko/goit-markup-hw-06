@@ -944,7 +944,7 @@ li .svg-icon-social {
     flex-direction: column;
     position: absolute;
     left: 40px;
-    top: 437px;
+    top: 457px;
 }
 
 .modal-submit:hover {
@@ -996,6 +996,10 @@ li .svg-icon-social {
     transition: cubic-bezier(0.4, 0, 0.2, 1) 250ms;
 
 }
+.modal-form .label>input:focus+.form-svg-icon{
+    fill:#2196F3;
+    transition: cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+}
 
 .footer-newsletter {
     padding-left: 78px;
@@ -1031,7 +1035,7 @@ li .svg-icon-social {
     background: var(--blue);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
-    border-color: #2196F3;
+    border-color: var(--blue);
     font-family: Roboto;
     font-style: normal;
     font-weight: bold;
@@ -1055,8 +1059,50 @@ li .svg-icon-social {
 .modal-form-input{
     width: 440px;
     height:40px;
-    ;
+    
 }
 .footer-input-mail:focus-within {
     color: var(--white);
+}
+
+.modal-submit span {
+    color: #2196F3;
+    text-decoration: underline;
+}
+
+.chbox-conditions::before {
+    content: "";
+    box-sizing: border-box;
+    border-radius: 3px;
+    display: inline-block;
+    height: 16px;
+    width: 16px;
+    border: 2px solid #212121;
+    margin-right: 8px;
+
+    position: relative;
+    top: 3px;
+
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.input-check-conditions:checked+.chbox-conditions::before {
+    background: var(--blue);
+    border: none;
+    background-image: url(../images/vector.svg);
+    background-repeat: no-repeat;
+    background-position: initial;
+
+}
+
+/* Magiczna klassa css */
+.visually-hidden {
+    position: absolute !important;
+    clip: rect(1px 1px 1px 1px);
+    clip: rect(1px, 1px, 1px, 1px);
+    padding:  !important;
+    border: 0 !important;
+    height: 1px !important;
+    width: 1px !important;
+    overflow: hidden;
 }
